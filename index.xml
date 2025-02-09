@@ -1,0 +1,90 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>mH4ck3r0n3&#39;s Blog</title>
+        <link>https://mh4ck3r0n3.github.io/</link>
+        <description>Welcome to mH4ck3r0n3&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>matteopio082@gmail.com (mH4ck3r0n3)</managingEditor>
+            <webMaster>matteopio082@gmail.com (mH4ck3r0n3)</webMaster><lastBuildDate>Sun, 09 Feb 2025 12:16:40 &#43;0100</lastBuildDate>
+            <atom:link href="https://mh4ck3r0n3.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>🌐 ZONEy</title>
+    <link>https://mh4ck3r0n3.github.io/posts/2025/02/07/zoney/</link>
+    <pubDate>Fri, 07 Feb 2025 21:02:05 &#43;0100</pubDate>
+    <author>mH4ck3r0n3</author>
+    <guid>https://mh4ck3r0n3.github.io/posts/2025/02/07/zoney/</guid>
+    <description><![CDATA[A detailed write-up of the Web challenge &lsquo;ZONEy&rsquo; from NullCon Goa HackIM CTF - 2025]]></description>
+</item>
+<item>
+    <title>🌐 Temptation</title>
+    <link>https://mh4ck3r0n3.github.io/posts/2025/02/07/temptation/</link>
+    <pubDate>Fri, 07 Feb 2025 19:35:39 &#43;0100</pubDate>
+    <author>mH4ck3r0n3</author>
+    <guid>https://mh4ck3r0n3.github.io/posts/2025/02/07/temptation/</guid>
+    <description><![CDATA[A detailed write-up of the Web challenge &lsquo;Temptation&rsquo; from NullCon Goa HackIM CTF - 2025]]></description>
+</item>
+<item>
+    <title>🌐 Sess.io</title>
+    <link>https://mh4ck3r0n3.github.io/posts/2025/02/07/sess.io/</link>
+    <pubDate>Fri, 07 Feb 2025 19:15:15 &#43;0100</pubDate>
+    <author>mH4ck3r0n3</author>
+    <guid>https://mh4ck3r0n3.github.io/posts/2025/02/07/sess.io/</guid>
+    <description><![CDATA[A detailed write-up of the Web challenge &lsquo;Sess.io&rsquo; from NullCon Goa HackIM CTF - 2025]]></description>
+</item>
+<item>
+    <title>🌐 Paginator V2</title>
+    <link>https://mh4ck3r0n3.github.io/posts/2025/02/07/paginator-v2/</link>
+    <pubDate>Fri, 07 Feb 2025 19:02:35 &#43;0100</pubDate>
+    <author>mH4ck3r0n3</author>
+    <guid>https://mh4ck3r0n3.github.io/posts/2025/02/07/paginator-v2/</guid>
+    <description><![CDATA[A detailed write-up of the Web challenge &lsquo;Paginator V2&rsquo; from NullCon Goa HackIM CTF - 2025]]></description>
+</item>
+<item>
+    <title>🌐 Paginator</title>
+    <link>https://mh4ck3r0n3.github.io/posts/2025/02/07/paginator/</link>
+    <pubDate>Fri, 07 Feb 2025 18:46:43 &#43;0100</pubDate>
+    <author>mH4ck3r0n3</author>
+    <guid>https://mh4ck3r0n3.github.io/posts/2025/02/07/paginator/</guid>
+    <description><![CDATA[A detailed write-up of the Web challenge &lsquo;Paginator&rsquo; from NullCon Goa HackIM CTF - 2025]]></description>
+</item>
+<item>
+    <title>🌐 Numberizer</title>
+    <link>https://mh4ck3r0n3.github.io/posts/2025/02/07/numberizer/</link>
+    <pubDate>Fri, 07 Feb 2025 18:34:06 &#43;0100</pubDate>
+    <author>mH4ck3r0n3</author>
+    <guid>https://mh4ck3r0n3.github.io/posts/2025/02/07/numberizer/</guid>
+    <description><![CDATA[A detailed write-up of the Web challenge &lsquo;Numberizer&rsquo; from NullCon Goa HackIM CTF - 2025]]></description>
+</item>
+<item>
+    <title>🌐 Crahp</title>
+    <link>https://mh4ck3r0n3.github.io/posts/2025/02/07/crahp/</link>
+    <pubDate>Fri, 07 Feb 2025 18:11:36 &#43;0100</pubDate>
+    <author>mH4ck3r0n3</author>
+    <guid>https://mh4ck3r0n3.github.io/posts/2025/02/07/crahp/</guid>
+    <description><![CDATA[A detailed write-up of the Web challenge &lsquo;Crahp&rsquo; from NullCon Goa HackIM CTF - 2025]]></description>
+</item>
+<item>
+    <title>🌐 Bfail</title>
+    <link>https://mh4ck3r0n3.github.io/posts/2025/02/07/bfail/</link>
+    <pubDate>Fri, 07 Feb 2025 17:36:33 &#43;0100</pubDate>
+    <author>mH4ck3r0n3</author>
+    <guid>https://mh4ck3r0n3.github.io/posts/2025/02/07/bfail/</guid>
+    <description><![CDATA[A detailed write-up of the Web challenge &lsquo;Bfail&rsquo; from NullCon Goa HackIM CTF - 2025]]></description>
+</item>
+<item>
+    <title>🌐 Submission</title>
+    <link>https://mh4ck3r0n3.github.io/posts/2025/02/06/submission/</link>
+    <pubDate>Thu, 06 Feb 2025 15:31:11 &#43;0100</pubDate>
+    <author>mH4ck3r0n3</author>
+    <guid>https://mh4ck3r0n3.github.io/posts/2025/02/06/submission/</guid>
+    <description><![CDATA[A detailed write-up of the Web challenge &lsquo;Submission&rsquo; from x3CTF - 2025]]></description>
+</item>
+<item>
+    <title>🌐 Sparkling Sky</title>
+    <link>https://mh4ck3r0n3.github.io/posts/2025/02/05/sparkling-sky/</link>
+    <pubDate>Wed, 05 Feb 2025 21:54:05 &#43;0100</pubDate>
+    <author>mH4ck3r0n3</author>
+    <guid>https://mh4ck3r0n3.github.io/posts/2025/02/05/sparkling-sky/</guid>
+    <description><![CDATA[A detailed write-up of the Web challenge &lsquo;Sparkling Sky&rsquo; from SrdnlenCTF - 2025]]></description>
+</item>
+</channel>
+</rss>
