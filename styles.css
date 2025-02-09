@@ -18,12 +18,13 @@ body {
 }
 .container {
     display: flex;
-    padding: 10px;
+    height: 90vh;
 }
 .sidebar {
     width: 20%;
     padding: 10px;
     border-right: 2px solid #00ff00;
+    overflow-y: auto;
 }
 .content {
     width: 80%;
@@ -38,6 +39,16 @@ li a {
     text-decoration: none;
     color: #ffcc00;
     cursor: pointer;
+    display: block;
+    padding: 5px;
+}
+li a:hover {
+    background-color: #333;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 .text-box {
     background: #222;
@@ -47,4 +58,5 @@ li a {
     font-size: 16px;
     white-space: pre-wrap;
     overflow-x: auto;
+    width: 100%;
 }
